@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Buddy: Private AI Friend · Privacy Policy &amp; Support</title>
+<style>
+  :root {
+    --purple: #7C4DFF;
+    --purple-soft: #EFEAF6;
+    --text: #1d1b22;
+    --muted: #5d5a66;
+    --line: #e4dff0;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+    color: var(--text);
+    background: #faf8fd;
+    line-height: 1.6;
+  }
+  .page { max-width: 780px; margin: 0 auto; padding: 40px 24px 80px; }
+  header { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  h1 { font-size: 30px; margin: 0; }
+  h1 span { color: var(--purple); }
+  h2 { font-size: 21px; margin: 36px 0 8px; padding-top: 12px; border-top: 1px solid var(--line); }
+  h3 { font-size: 16px; margin: 20px 0 4px; }
+  p, li { color: var(--text); }
+  .muted { color: var(--muted); }
+  .summary {
+    background: var(--purple-soft);
+    border-left: 4px solid var(--purple);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin: 24px 0;
+  }
+  .summary ul { margin: 6px 0 0; padding-left: 20px; }
+  .print-btn {
+    background: var(--purple);
+    color: #fff;
+    border: none;
+    border-radius: 999px;
+    padding: 10px 22px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .print-btn:hover { filter: brightness(1.08); }
+  .placeholder { background: #fff3cf; padding: 0 4px; border-radius: 4px; }
+  table { border-collapse: collapse; width: 100%; margin: 8px 0; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-size: 14px; color: var(--muted); }
+  a { color: var(--purple); }
+  .page-break { break-before: page; }
+
+  /* Printing: hide the button, use plain white paper, keep sections together. */
+  @media print {
+    body { background: #fff; }
+    .print-btn, .no-print { display: none !important; }
+    .page { padding: 0; max-width: none; }
+    .summary { break-inside: avoid; }
+    h2, h3 { break-after: avoid; }
+    a { color: var(--text); text-decoration: none; }
+    a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 11px; color: var(--muted); }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <h1><span>Buddy</span>: Private AI Friend</h1>
+    <button class="print-btn" onclick="window.print()">🖨️ Print</button>
+  </header>
+  <p class="no-print muted">Before publishing: replace the highlighted placeholders, then host this page online (for example on GitHub Pages or your own website) and paste its link into App Store Connect as both the <strong>Privacy Policy URL</strong> and the <strong>Support URL</strong>.</p>
+
+  <!-- ═══════════════════════════ PRIVACY POLICY ═══════════════════════════ -->
+
+  <h2 style="border-top:none; margin-top:12px;">Privacy Policy</h2>
+  <p class="muted">Effective date: October 9, 2026 · Developer: Joseph Khan</p>
+
+  <div class="summary">
+    <strong>The short version</strong>
+    <ul>
+      <li>Buddy runs entirely on your phone. <strong>Your chats never leave your phone.</strong></li>
+      <li>We don't collect any personal data. No accounts, no ads, no analytics, no tracking.</li>
+      <li>Your chats are never uploaded, never sold, and never used to train AI.</li>
+      <li>Buddy's data is kept out of iCloud and computer backups.</li>
+      <li>Web searches only happen when you say yes, and only the search words are sent.</li>
+    </ul>
+  </div>
+
+  <h3>1. Information we collect</h3>
+  <p>None. We (the developer of Buddy) do not collect, receive, store, or have access to any of your personal information, conversations, photos, files, or usage data. Buddy has no user accounts, no sign-in, no advertising, no analytics, and no third-party tracking tools.</p>
+
+  <h3>2. What Buddy stores on your phone</h3>
+  <p>To be a friend who remembers you, Buddy saves the following <strong>only on your device</strong>, inside the app's private storage:</p>
+  <ul>
+    <li>Your chat history with Buddy</li>
+    <li>Buddy's memory: the facts he has learned about you, and short summaries of past chats</li>
+    <li>Buddy's own backstory (which you can edit)</li>
+    <li>Photos and files you choose to share with Buddy</li>
+    <li>App settings and your best game score</li>
+    <li>Buddy's AI model files (his "brain" and "eyes")</li>
+  </ul>
+  <p>This data is <strong>excluded from iCloud and computer backups</strong>, so it never leaves your phone that way either. As a result, if you move to a new phone, Buddy starts fresh. On your own phone, these files may also be visible to you in the Files app.</p>
+
+  <h3>3. When Buddy connects to the internet</h3>
+  <p>Buddy works offline. It connects to the internet only in these cases:</p>
+  <table>
+    <tr><th>When</th><th>What is sent</th><th>To whom</th></tr>
+    <tr>
+      <td>First launch: downloading Buddy's AI model (about 3 GB), and his optional "eyes" (about 0.7 GB) the first time you share a photo</td>
+      <td>A standard file download request. Like any download, the server sees your device's IP address and basic connection details. No personal information and no chats are sent.</td>
+      <td>Hugging Face, the service hosting the model files (<a href="https://huggingface.co/privacy">privacy policy</a>)</td>
+    </tr>
+    <tr>
+      <td>Web search, <strong>only after you tap "Agree &amp; Search"</strong></td>
+      <td>Only the search words shown to you in the request card. Never your chats, your name, or anything Buddy knows about you.</td>
+      <td>DuckDuckGo, a search engine (<a href="https://duckduckgo.com/privacy">privacy policy</a>)</td>
+    </tr>
+    <tr>
+      <td>Links you choose to tap (for example a helpline or website)</td>
+      <td>Whatever that app or website normally receives when you open it</td>
+      <td>The service you open</td>
+    </tr>
+  </table>
+
+  <h3>4. Camera, photos and files</h3>
+  <p>Buddy only accesses your camera, photo library, or files when you choose to share something. Shared photos and files are processed on your phone and stored only in Buddy's private storage. They are never uploaded.</p>
+
+  <h3>5. Apple</h3>
+  <p>Buddy is distributed through Apple's App Store. Apple may provide us with aggregated, anonymous statistics (such as the number of downloads), and only for users who chose to share analytics with app developers in their iPhone settings. This is handled by Apple under <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>; we cannot identify you from it.</p>
+
+  <h3>6. About Buddy's AI</h3>
+  <p>Buddy is an AI companion, not a person. His replies are generated on your phone and can sometimes be wrong. Buddy is not a doctor, therapist, lawyer, or emergency service, and his responses are not professional advice. If you are in crisis, please contact a real person: in the US, call or text <strong>988</strong> (Suicide &amp; Crisis Lifeline), or call <strong>911</strong> in an emergency. Outside the US, visit <a href="https://findahelpline.com">findahelpline.com</a>. Buddy also shows these options in the app ("Need help now?").</p>
+
+  <h3>7. Your control and deleting your data</h3>
+  <ul>
+    <li><strong>See and edit</strong> everything Buddy remembers: tap Buddy's name in the chat to open his profile.</li>
+    <li><strong>Erase everything</strong>: tap "UnFriend Buddy" in his profile. This deletes all chats, memories, summaries, shared photos and files, and your friendship level.</li>
+    <li><strong>Delete the app</strong> to remove all of Buddy's data from your phone.</li>
+  </ul>
+  <p>Because we never receive your data, there is nothing stored on our side to request, export, or delete.</p>
+
+  <h3>8. Security</h3>
+  <p>Buddy's data is protected by your iPhone's built-in security and encryption. To keep it safe, use a passcode, Face ID, or Touch ID on your phone. Anyone who can unlock your phone may be able to open Buddy and read your chats.</p>
+
+  <h3>9. Children</h3>
+  <p>Buddy is not intended for children under 13, and we do not knowingly collect information from anyone, including children.</p>
+
+  <h3>10. Changes to this policy</h3>
+  <p>If we change how Buddy handles data, we will update this page and the effective date above. If a future version adds any optional data sharing, it will be off by default, explained clearly in the app, and only turned on if you choose to.</p>
+
+  <h3>11. Contact</h3>
+  <p>Questions about privacy? Email <span class="placeholder">[your support email]</span>.</p>
+
+  <!-- ═══════════════════════════ SUPPORT ═══════════════════════════ -->
+
+  <h2 class="page-break">Support</h2>
+  <p>Need help with Buddy? Email <span class="placeholder">[your support email]</span> and we'll get back to you as soon as we can.</p>
+
+  <h3>Why does Buddy need to download about 3 GB?</h3>
+  <p>That's Buddy's brain. Unlike cloud AI apps, Buddy runs entirely on your phone, so his AI model has to live on your phone too. It downloads once; after that, Buddy works without internet. Wi-Fi is recommended. You can leave the app while it downloads.</p>
+
+  <h3>Does Buddy work offline?</h3>
+  <p>Yes. After the one-time download, you can chat with Buddy even in airplane mode. Only optional web searches (which always ask you first) need internet.</p>
+
+  <h3>Why does Buddy take a nap?</h3>
+  <p>Buddy can only hold so much of a conversation in his short-term memory. When it fills up, he takes a short nap to save what you talked about into his long-term memory, so he remembers you next time.</p>
+
+  <h3>Which iPhones can run Buddy?</h3>
+  <p>Buddy runs a full AI model on your phone, so he needs a recent iPhone with plenty of memory. He works best on iPhones with 8 GB of memory. If your phone doesn't have enough, Buddy will tell you instead of crashing.</p>
+
+  <h3>How do I see or change what Buddy remembers?</h3>
+  <p>Tap Buddy's name at the top of the chat. In his profile, tap any fact to fix it or make him forget it.</p>
+
+  <h3>I got a new phone. Where did Buddy's memories go?</h3>
+  <p>For your privacy, Buddy's data is kept only on the phone you used, and not in backups. On a new phone, Buddy starts fresh.</p>
+
+  <h3>How do I delete everything?</h3>
+  <p>Open Buddy's profile and tap "UnFriend Buddy", or delete the app.</p>
+
+  <p class="muted" style="margin-top:40px;">© 2026 Joseph Khan. Buddy: Private AI Friend.</p>
+</div>
+</body>
+</html>
